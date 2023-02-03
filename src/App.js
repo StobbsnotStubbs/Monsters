@@ -8,8 +8,7 @@ const App = () => {
   const [searchField, setSearchField] = useState("");
 
   useEffect(() => {
-    console.log("3 componentDidMount");
-    fetch("https://jsonplaceholder.typicode.com/users")
+     fetch("https://jsonplaceholder.typicode.com/users")
       .then((response) => response.json())
       .then((users) => setMonsters(users));
   }, []);
